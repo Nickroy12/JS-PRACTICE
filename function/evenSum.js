@@ -15,5 +15,3 @@ function sum(num){
 }
 const output = sum(number); 
 console.log(output);
-
-
