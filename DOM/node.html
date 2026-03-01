@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        width: 100%;
+        height: 100vh;
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section{
+        width: 50%;
+        height: 70vh;
+        background-color: #f2ff60;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .div{
+        width: 30%;
+        height: 50vh;
+        background-color: #2fbdff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<body>
+    <main class="main">
+        <section class="section">
+            <div id="div" class="div">
+                <button id="btn">Home</button>
+                <button id="btn">Home</button>
+                <button id="btn">Home</button>
+            </div>
+        </section>
+    </main>
+    <script>
+    //   const div = document.getElementById('div').parentNode.parentNode.parentNode
+    // const div = document.getElementById('div').childNodes
+    const div = document.getElementById('div').children
+      
+       console.log(div)
+       
+    </script>
+</body>
+</html>
