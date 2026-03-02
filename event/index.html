@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 >Traditional event </h3>
+<button onclick="alert(9 + 2)">ok</button>
+<h3>JS Event</h3>
+<button id="color">Change color</button>
+
+<script>
+    const clg = document.getElementById('color');
+
+    const manyColor = ['red', 'green', 'yellow']
+    let i = 0;
+
+    clg.addEventListener('click', function(){
+      document.body.style.background = manyColor[i];
+      i++
+      if(i ===  manyColor.length){
+        i = 0;
+      }
+    })
+</script>
+
+</body>
+</html>
