@@ -14,7 +14,7 @@ function display(users){
     users.forEach(user => {
         const li = document.createElement('li');
         li.style = 'list-style:none; border:1px solid red; margin:19px'
-        li.innerHTML = `Name : ${user.name} </br> email:${user.email}`;
+        li.innerHTML = `Name : ${user.name} </br> emai l:${user.email}`;
         container.appendChild(li);
     });
 }
